@@ -1,0 +1,129 @@
+
+  .title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+    color: #1f2937;
+  }
+  
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1.5rem;
+  }
+  
+  .card {
+    background-color: #ffffff;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    cursor: default;
+  }
+  
+  .card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  }
+  
+  .card h2 {
+    font-size: 1.25rem;
+    color: #111827;
+    margin-bottom: 0.5rem;
+  }
+  
+  .card p {
+    color: #4b5563;
+    margin: 0.25rem 0;
+  }
+  
+  .addCard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: #4b5563;
+    background-color: #f3f4f6;
+    border: 2px dashed #9ca3af;
+    cursor: pointer;
+  }
+  
+  .addCard:hover {
+    background-color: #e5e7eb;
+    color: #1f2937;
+    border-color: #6b7280;
+  }
+  
+  /* Modal */
+  .modalOverlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+  }
+  
+  .modal {
+    background: white;
+    padding: 2rem;
+    border-radius: 1rem;
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .modal h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .modal form input {
+    width: 100%;
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    border: 1px solid #d1d5db;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+  }
+  
+  .modalActions {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+  }
+  
+  .modalActions button {
+    flex: 1;
+    padding: 0.75rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: background 0.2s ease;
+  }
+  
+  .modalActions button[type="submit"] {
+    background-color: #2563eb;
+    color: white;
+  }
+  
+  .modalActions button[type="submit"]:hover {
+    background-color: #1e40af;
+  }
+  
+  .modalActions button[type="button"] {
+    background-color: #9ca3af;
+    color: white;
+  }
+  
+  .modalActions button[type="button"]:hover {
+    background-color: #6b7280;
+  }
+  
